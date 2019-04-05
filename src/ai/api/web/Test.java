@@ -47,7 +47,7 @@ public class Test extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		PrintWriter out = response.getWriter();
 		String responseStr = "{\r\n" + 
-		"  \"fulfillmentText\": \"You asked me to,  "+googlerequest.getQueryResult().getQueryText()+". Here deivice name is, " +googlerequest.getQueryResult().getParameters().get("DeviceName")+". \",\r\n" + 
+		"  \"fulfillmentText\": \"You asked me to,  "+googlerequest.getQueryResult().getQueryText()+". Here device name is, " +googlerequest.getQueryResult().getParameters().get("DeviceName")+". \",\r\n" + 
 		"  \"outputContexts\": []\r\n" + 
 		"}";
         out.print(responseStr );
